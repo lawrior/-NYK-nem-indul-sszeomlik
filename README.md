@@ -4,7 +4,7 @@
 ![image](https://user-images.githubusercontent.com/95906104/211758572-d289b6f4-fae3-457d-af10-75c6297866ff.png)
 
 # Hibaüzenet elolvasása
-Amennyiben az ÁNYK program nem indul el, hanem csak egy fekete ablak ugrik fel amely szinte azonnal be is záródik, így a kiírt hibakód elolvasására sincs lehetőség, hajtsa végre a következő lépések.
+Amennyiben az ÁNYK program nem indul el, hanem csak egy fekete ablak ugrik fel amely szinte azonnal be is záródik, így a kiírt hibakód elolvasására sincs lehetőség, hajtsa végre a következő lépéseket.
 1. Keresse meg az ÁNYK programfájljait tartalmazó mappát.
 Legegyszerübben úgy teheti meg, ha az asztalon levő ikonra jobb egérgombbal kattint és ott a megjelenő lehetőségek közül a "Fálj helyének megnyitása"-ra kattint. Ekkor egy mappa fog megnyilni amelyben a lenti képen látható fájlok lesznek láthatók. Ha nincs ikon az asztalán, vagy a FÁjl helyének megnyitását követően nem a lenti fájlokat tartalmazó mappa nyílik meg, akkor pedig keresse meg számítógépén az "abevjava" elnevezésű mappát. Nálam alapértelmezetten a következő helyre települt: ```C:\Users\Public\abevjava```
 
