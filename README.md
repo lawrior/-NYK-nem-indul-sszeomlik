@@ -36,20 +36,22 @@ Próbálja elindítani újra a fájlt, most már el fogja tudni olvasni a hibaü
 
 
 # Memóriahiány hiba
-```Error occurred during initialization of VM
-Could not reserve enough space for object heap```
-
-A hiba magyarázata technikai nyelven:
 ```
+Error occurred during initialization of VM
+Could not reserve enough space for object heap
+```
+
+**A hiba magyarázata technikai nyelven:**
+
 Ez a hibaüzenet általában azt jelzi, hogy a rendszeren nincs elegendő memória a Java Virtual Machine (JVM) futtatásához. A JVM-nek bizonyos mennyiségű összefüggő memóriára van szüksége ahhoz, hogy létre tudja hozni az objektumhalmazt, és ha ez a memória nem áll rendelkezésre, a JVM nem tud elindulni.
-
 A probléma megoldásához megpróbálhatja növelni a JVM számára kiosztott memória mennyiségét a Java futtatható programnak átadott parancssori opciók módosításával.
-```
-Érthetőbb nyelven: Valami miatt az ÁNYK-nak nem áll rendelkezésére elegendő memória. Ennek orvoslására a fent vázolt módon - a ```abevjava_start.bat``` fájlban történő kód átírásával - kell eljárnunk.
 
-Megoldás:
+**Érthetőbb nyelven:** Valami miatt az ÁNYK-nak nem áll rendelkezésére elegendő memória. Ennek orvoslására a fent vázolt módon - a ```abevjava_start.bat``` fájlban történő kód átírásával - kell eljárnunk.
+
+## **Megoldás:**
 Az ```abevjava_start.bat``` fájlban módosítsa a használandó memória méretét.
 Az alábbi kódban cserélje le mindkét helyen ```%MEMORY_OPTS%``` kódot a következőre ```-Xms512m -Xmx1024m```. A kód jelentése: 512-vel fog indulni a program és ha ez nem elégséges neki akkor egészen 1024 megabájtnyit is használhat belőle.
+
 ```
 @IF EXIST "C:/Users/Public/abevjava/jre/bin/" (SET ABEV_JAVA_HOME="C:/Users/Public/abevjava/jre/bin/")
 @CALL .\setenv.bat
